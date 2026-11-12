@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-proxy-examples",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "https-proxy-agent": "^7.0.5",
+    "socks-proxy-agent": "^8.0.4",
+    "undici": "^6.19.0"
+  }
+}
