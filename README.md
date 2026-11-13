@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=nodejs-proxy">
+  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=referral&utm_campaign=nodejs-proxy">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-dark.png">
       <img src="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-light.png" alt="Fusion Proxy" height="52">
@@ -109,7 +109,7 @@ const rotating = `${USERNAME}-country-us`;                                   // 
 const sticky = `${USERNAME}-country-us-sessid-4821937-sessTime-600s`;        // one US IP for 10 minutes
 ```
 
-Agents keep connections open and reuse them, and a reused connection keeps its IP. Create a new agent when you want a new IP, and reuse one agent with a sticky username when you want to keep it. [`05_rotating_sticky.mjs`](05_rotating_sticky.mjs) prints three rotating IPs and three identical sticky ones. The username format is in the [endpoint generator guide](https://fusionproxy.net/guides/endpoint-generator?utm_source=github&utm_medium=nodejs-proxy).
+Agents keep connections open and reuse them, and a reused connection keeps its IP. Create a new agent when you want a new IP, and reuse one agent with a sticky username when you want to keep it. [`05_rotating_sticky.mjs`](05_rotating_sticky.mjs) prints three rotating IPs and three identical sticky ones. The username format is in the [endpoint generator guide](https://fusionproxy.net/guides/endpoint-generator?utm_source=github&utm_medium=referral&utm_campaign=nodejs-proxy).
 
 ## 6. Errors and fixes
 
@@ -121,9 +121,9 @@ Agents keep connections open and reuse them, and a reused connection keeps its I
 | `self-signed certificate` / `unable to verify the first certificate` | Something in the path replaced the website's certificate | Do not set `rejectUnauthorized: false`; a proxy that does this reads your traffic |
 | `403` or `429` from the website | The site blocks or rate-limits the IP | Slow down, use normal headers, use a residential IP in the right country |
 
-To test proxies without code, use the [online proxy checker](https://fusionproxy.net/tools/proxy-checker?utm_source=github&utm_medium=nodejs-proxy) or the [proxy-checker](https://github.com/FusionProxies/proxy-checker) CLI.
+To test proxies without code, use the [online proxy checker](https://fusionproxy.net/tools/proxy-checker?utm_source=github&utm_medium=referral&utm_campaign=nodejs-proxy) or the [proxy-checker](https://github.com/FusionProxies/proxy-checker) CLI.
 
-No proxy yet? [Fusion Proxy residential proxies](https://fusionproxy.net/proxies/residential?utm_source=github&utm_medium=nodejs-proxy) start at $2.95/GB, with a [free trial](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=nodejs-proxy).
+No proxy yet? [Fusion Proxy residential proxies](https://fusionproxy.net/proxies/residential?utm_source=github&utm_medium=referral&utm_campaign=nodejs-proxy) start at $2.95/GB, with a [free trial](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=referral&utm_campaign=nodejs-proxy).
 
 ## Related
 
